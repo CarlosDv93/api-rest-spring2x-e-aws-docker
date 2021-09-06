@@ -1,5 +1,6 @@
 package br.com.udemy.carlosdv93.controllers;
 
+import br.com.udemy.carlosdv93.exceptions.UnsupportedMathOperationException;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,7 +14,7 @@ public class CalculatorController {
     public Double sum(@PathVariable(name = "number1") String num1, @PathVariable(name = "number2") String num2) throws Exception {
         System.out.println("Entrou no sum");
         if(!isNumeric(num1) || !isNumeric(num2)) {
-            throw new Exception("Não é um numero!");
+            throw new UnsupportedMathOperationException("Please, provide a numeric value");
         }
 
         return convertToDouble(num1) + convertToDouble(num2);
@@ -22,7 +23,7 @@ public class CalculatorController {
     @RequestMapping(value= "/sub/{number1}/{number2}", method = RequestMethod.GET)
     public Double subs(@PathVariable(name = "number1") String num1, @PathVariable(name = "number2") String num2) throws Exception {
         if(!isNumeric(num1) || !isNumeric(num2)){
-            throw new Exception("Não é um numero!");
+            throw new UnsupportedMathOperationException("Please, provide a numeric value");
         }
 
         return convertToDouble(num1) - convertToDouble(num2);
@@ -41,6 +42,6 @@ public class CalculatorController {
         if(strNumber == null) return false;
 
         String number = strNumber.replaceAll(",", ".");
-        return number.matches("[+-]?[0-9]+\\.?[0-9]+");
+        return number.matches("[+-]?[0-9]*\\.?[0-9]+");
     }
 }
