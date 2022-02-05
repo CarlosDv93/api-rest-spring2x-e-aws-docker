@@ -1,6 +1,6 @@
 package br.com.udemy.carlosdv93.controllers;
 
-import br.com.udemy.carlosdv93.model.Person;
+import br.com.udemy.carlosdv93.data.vo.PersonVO;
 import br.com.udemy.carlosdv93.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,22 +16,22 @@ public class PersonController {
     private PersonService personService;
 
     @GetMapping(value = "{id}")
-    public Person findById(@PathVariable Long id) throws Exception {
+    public PersonVO findById(@PathVariable Long id) throws Exception {
         return personService.findById(id);
     }
 
     @GetMapping
-    public List<Person> findAll() throws Exception {
+    public List<PersonVO> findAll() throws Exception {
         return personService.findAll();
     }
 
     @PostMapping
-    public Person createPerson(@RequestBody Person person) throws Exception {
+    public PersonVO createPerson(@RequestBody PersonVO person) throws Exception {
         return personService.create(person);
     }
 
     @PutMapping
-    public Person updatePerson(@RequestBody Person person) throws Exception {
+    public PersonVO updatePerson(@RequestBody PersonVO person) throws Exception {
         return personService.create(person);
     }
 

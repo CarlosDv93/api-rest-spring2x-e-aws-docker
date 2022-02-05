@@ -1,11 +1,9 @@
 package br.com.udemy.carlosdv93.services;
 
 import br.com.udemy.carlosdv93.exceptions.ResourceNotFoundException;
-import br.com.udemy.carlosdv93.model.Person;
 import br.com.udemy.carlosdv93.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.List;
 

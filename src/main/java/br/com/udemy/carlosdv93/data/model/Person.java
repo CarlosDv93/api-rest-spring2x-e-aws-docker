@@ -1,4 +1,4 @@
-package br.com.udemy.carlosdv93.model;
+package br.com.udemy.carlosdv93.data.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
