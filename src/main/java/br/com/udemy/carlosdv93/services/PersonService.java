@@ -1,5 +1,6 @@
 package br.com.udemy.carlosdv93.services;
 
+import br.com.udemy.carlosdv93.data.model.Person;
 import br.com.udemy.carlosdv93.exceptions.ResourceNotFoundException;
 import br.com.udemy.carlosdv93.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,7 +45,7 @@ public class PersonService {
     }
 
     public List<Person> findAll() {
-        return (List<Person>) personRepository.findAll();
+        return personRepository.findAll();
     }
 
 }
