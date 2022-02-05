@@ -1,6 +1,8 @@
 package br.com.udemy.carlosdv93.services;
 
+import br.com.udemy.carlosdv93.converter.DozerConverter;
 import br.com.udemy.carlosdv93.data.model.Person;
+import br.com.udemy.carlosdv93.data.vo.PersonVO;
 import br.com.udemy.carlosdv93.exceptions.ResourceNotFoundException;
 import br.com.udemy.carlosdv93.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,13 +16,27 @@ public class PersonService {
     @Autowired
     PersonRepository personRepository;
 
-    public Person create(Person person){
-        return personRepository.save(person);
+    public PersonVO create(PersonVO person){
+        var entity = DozerConverter.parseObject(person, Person.class);
+        var vo = DozerConverter.parseObject(personRepository.save(entity), PersonVO.class);
+        return vo;
     }
 
-    public Person update(Person p){
+    public List<PersonVO> findAll() {
+        return DozerConverter.parseListObjects(personRepository.findAll(), PersonVO.class);
+    }
 
-        Person entity = personRepository.findById(p.getId())
+
+    public PersonVO findById(Long id) {
+        var entity = personRepository.findById(id)
+                .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
+
+        return DozerConverter.parseObject(entity, PersonVO.class);
+    }
+
+    public PersonVO update(PersonVO p){
+
+        var entity = personRepository.findById(p.getId())
                 .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
 
         entity.setName(p.getName());
@@ -28,8 +44,8 @@ public class PersonService {
         entity.setAddress(p.getAddress());
         entity.setGender(p.getGender());
 
-        personRepository.save(entity);
-        return entity;
+        var vo = DozerConverter.parseObject(personRepository.save(entity), PersonVO.class);
+        return vo;
     }
 
     public void delete(Long id){
@@ -39,13 +55,5 @@ public class PersonService {
         personRepository.delete(entity);
     }
 
-    public Person findById(Long id) {
-        return personRepository.findById(id)
-                .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
-    }
-
-    public List<Person> findAll() {
-        return personRepository.findAll();
-    }
 
 }
