@@ -1,55 +1,52 @@
 package br.com.udemy.carlosdv93.services;
 
+import br.com.udemy.carlosdv93.exceptions.ResourceNotFoundException;
 import br.com.udemy.carlosdv93.model.Person;
+import br.com.udemy.carlosdv93.repository.PersonRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Service
 public class PersonService {
 
-    private final AtomicLong counter = new AtomicLong();
+    @Autowired
+    PersonRepository personRepository;
 
     public Person create(Person person){
-        return person;
+        return personRepository.save(person);
     }
 
-    public Person update(Person person){
-        return person;
+    public Person update(Person p){
+
+        Person entity = personRepository.findById(p.getId())
+                .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
+
+        entity.setName(p.getName());
+        entity.setLastName(p.getLastName());
+        entity.setAddress(p.getAddress());
+        entity.setGender(p.getGender());
+
+        personRepository.save(entity);
+        return entity;
     }
 
-    public void delete(String id){
+    public void delete(Long id){
+        Person entity = personRepository.findById(id)
+                .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
 
+        personRepository.delete(entity);
     }
 
-    public Person findById(String id) {
-        Person person = new Person();
-        person.setId(counter.incrementAndGet());
-        person.setName("Carlos");
-        person.setLastName("David");
-        person.setAddress("Itaúna - MG");
-        person.setGender("Male");
-        return person;
+    public Person findById(Long id) {
+        return personRepository.findById(id)
+                .orElseThrow( () -> new ResourceNotFoundException("No records found for this ID"));
     }
 
     public List<Person> findAll() {
-        List<Person> persons = new ArrayList<Person>();
-        for (int i = 0; i < 8; i++) {
-            Person person = mockPerson(i);
-            persons.add(person);
-        }
-        return persons;
+        return (List<Person>) personRepository.findAll();
     }
 
-    private Person mockPerson(int i) {
-        Person person = new Person();
-        person.setId(counter.incrementAndGet());
-        person.setName("Name" + i);
-        person.setLastName("LastName");
-        person.setAddress("Brasil");
-        person.setGender("Gender");
-        return person;
-    }
 }
