@@ -3,10 +3,16 @@
 
 Todos os códigos aqui citados foram realizados durante o curso e após ele, possivelmente melhorados ou implementadas novas funcionalidades.
 
+
 ### DOZER Mapper
 
 Usado pra realizar o mapper do VO (Value Object) para Entity de maneira mais rápida.
 É usado perfeitamente pra usos não "REAL TIME" ou com conversão de alguns ms. 
 
+##------------------------------------
+
+###Observação
+
+O Código gerado na seção de versionamento, se encontra em uma branch separada - chamada de "versionamento".
 
 
