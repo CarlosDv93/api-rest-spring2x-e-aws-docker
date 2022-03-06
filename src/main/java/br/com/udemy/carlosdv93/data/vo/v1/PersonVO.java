@@ -6,18 +6,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import java.util.Objects;
 
-@JsonPropertyOrder({"id", "address", "first_name", "last_name", "gender"})
 public class PersonVO {
     private Long id;
-
-    @JsonProperty("first_name")
     private String name;
-    @JsonProperty("last_name")
     private String lastName;
-
     private String address;
-
-    @JsonIgnore
     private String gender;
 
     public PersonVO() {
