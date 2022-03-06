@@ -2,7 +2,7 @@ package br.com.udemy.carlosdv93.converter;
 
 
 import br.com.udemy.carlosdv93.data.model.Person;
-import br.com.udemy.carlosdv93.data.vo.PersonVO;
+import br.com.udemy.carlosdv93.data.vo.v1.PersonVO;
 import br.com.udemy.carlosdv93.mock.MockPerson;
 
 import org.junit.Assert;

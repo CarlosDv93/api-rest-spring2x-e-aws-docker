@@ -18,6 +18,17 @@ comando usado pra executar na pasta
 comando pra executar as migrate
 ```mvn flyway:migrate ```
 
+## Seção 12 - JSON Custom
+####@JsonPropertyOrder
+Usado para adicionar as ordens usando um objeto `{}` com as propriedades que vc quer que apareçam.
+Usado nas classes (Veja PersonVO)
+
+#### @JsonProperty
+Usado para alterar o nome no JSON que é retornado
+
+#### @JsonIgnore
+Usado nas propriedades (atributos) para ocultar nas respostas.
+
 ###Observação
 
 O Código gerado na seção de versionamento, se encontra em uma branch separada - chamada de "versionamento".

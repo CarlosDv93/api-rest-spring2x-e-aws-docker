@@ -2,7 +2,7 @@ package br.com.udemy.carlosdv93.services;
 
 import br.com.udemy.carlosdv93.converter.DozerConverter;
 import br.com.udemy.carlosdv93.data.model.Person;
-import br.com.udemy.carlosdv93.data.vo.PersonVO;
+import br.com.udemy.carlosdv93.data.vo.v1.PersonVO;
 import br.com.udemy.carlosdv93.exceptions.ResourceNotFoundException;
 import br.com.udemy.carlosdv93.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
