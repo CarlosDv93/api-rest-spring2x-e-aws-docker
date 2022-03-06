@@ -1,4 +1,5 @@
 #NOTA de OBSERVAÇÃO 001
+##**Aula 94 - Depreciado - implementado como query param**
 ## Onde encontrar?
 Veja o arquivo WebConfig.java
 
@@ -40,4 +41,6 @@ public void configureContentNegotiation(ContentNegotiationConfigurer configurer)
 ```
 
 Desta maneira, a URL muda de ```/api/person/v1/1.xml``` para ```/api/person/v1/1?mediaType=xml``` <br />
-Os restantes dos arquivos ficaram exatamente iguais. 
+Os restantes dos arquivos ficaram exatamente iguais. <br />
+
+Acabei implementando a aula 95 sem saber. 
