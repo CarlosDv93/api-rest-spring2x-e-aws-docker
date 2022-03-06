@@ -9,7 +9,14 @@ Todos os códigos aqui citados foram realizados durante o curso e após ele, pos
 Usado pra realizar o mapper do VO (Value Object) para Entity de maneira mais rápida.
 É usado perfeitamente pra usos não "REAL TIME" ou com conversão de alguns ms. 
 
-##------------------------------------
+###--------------------------------------------------------------------
+
+## Seção 11 - Flyway
+comando usado pra executar na pasta
+``` mvn clean-package spring-boot:run ```
+
+comando pra executar as migrate
+```mvn flyway:migrate ```
 
 ###Observação
 
