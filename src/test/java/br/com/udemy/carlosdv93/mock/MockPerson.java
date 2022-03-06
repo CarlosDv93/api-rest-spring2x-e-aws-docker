@@ -1,7 +1,7 @@
 package br.com.udemy.carlosdv93.mock;
 
 import br.com.udemy.carlosdv93.data.model.Person;
-import br.com.udemy.carlosdv93.data.vo.PersonVO;
+import br.com.udemy.carlosdv93.data.vo.v1.PersonVO;
 
 import java.util.ArrayList;
 import java.util.List;
