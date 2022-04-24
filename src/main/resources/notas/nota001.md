@@ -10,8 +10,6 @@ Na versão 2.5.4, o uso do .json ou .xml no final das urls já estava depreciado
 Segue o código da aula do professor:
 
 ```java
-...
-
 public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
     configurer.favorParameter(false)
         .parameterName("mediaType")
@@ -20,7 +18,6 @@ public void configureContentNegotiation(ContentNegotiationConfigurer configurer)
         .mediaType("json", MediaType.APPLICATION_JSON)
         .mediaType("xml", MediaType.APPLICATION_XML);
 }
-
 ...
 ```
 
@@ -43,4 +40,4 @@ public void configureContentNegotiation(ContentNegotiationConfigurer configurer)
 Desta maneira, a URL muda de ```/api/person/v1/1.xml``` para ```/api/person/v1/1?mediaType=xml``` <br />
 Os restantes dos arquivos ficaram exatamente iguais. <br />
 
-Acabei implementando a aula 95 sem saber. 
+#### Acabei implementando a aula 95 sem saber. 
