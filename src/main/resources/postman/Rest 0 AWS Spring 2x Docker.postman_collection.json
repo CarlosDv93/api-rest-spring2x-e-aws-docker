@@ -27,6 +27,7 @@
 				"de000d96-60c4-0cab-1eab-175825238d75",
 				"352c97db-bd55-d0f8-7b6d-74194d9c68a2",
 				"f04e30b6-51a4-dfad-c1ab-4016e0abd47b",
+				"b9900599-b49e-fc2c-cf18-01d9128b39ef",
 				"11fd0224-9600-b1da-4656-844dd42b2603",
 				"9e4dbef5-72ac-044c-099a-61376b63d8e5",
 				"3b2fcc46-d10f-948f-353a-f2999930c512",
@@ -488,6 +489,38 @@
 			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41"
 		},
 		{
+			"id": "b9900599-b49e-fc2c-cf18-01d9128b39ef",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579583928,
+			"name": "Criar Person YAML",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f04e30b6-51a4-dfad-c1ab-4016e0abd47b",
+			"rawModeData": "{\n    \"name\": \"Maria\",\n    \"lastName\": \"Alves\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Female\"\n}"
+		},
+		{
 			"id": "c7b2a226-c93f-9c16-a2f6-0433edf14e8a",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -605,35 +638,33 @@
 		},
 		{
 			"id": "fccc46e0-53ed-033d-0200-26b1dee6427a",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:8080/api/person/v1?mediaType=xml",
-			"queryParams": [
+			"headers": "Accept: application/x-yaml\n",
+			"headerData": [
 				{
-					"key": "mediaType",
-					"value": "xml",
-					"equals": true,
+					"key": "Accept",
+					"value": "application/x-yaml",
 					"description": "",
 					"enabled": true
 				}
 			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
 			"data": null,
 			"dataMode": "params",
-			"name": "Get Person with mediaType option in header",
-			"description": "curl -X GET \\\n  http://localhost:8080/api/person/v1 \\\n  -H 'accept: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 49a74be0-8a03-9921-871f-9c4e3bd97813'\n  \n  Como pode ser visto na aula 96, para header ele puxa o application/xml ou application/json",
-			"descriptionFormat": "html",
-			"time": 1650805598525,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa"
+			"time": 1650806855639,
+			"name": "Get Person with mediaType option in header",
+			"description": "curl -X GET \\\n  http://localhost:8080/api/person/v1 \\\n  -H 'accept: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 49a74be0-8a03-9921-871f-9c4e3bd97813'\n  \n  Como pode ser visto na aula 96, para header ele puxa o application/xml ou application/json\n  na aula 97, se alterar para application/x-yaml ele vai retornar com o yaml",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
 		}
 	]
 }
