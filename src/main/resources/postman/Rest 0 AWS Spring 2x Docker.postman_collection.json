@@ -1,0 +1,670 @@
+{
+	"id": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+	"name": "Rest 0 AWS Spring 2x Docker",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Sessão 12",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"order": [
+				"a77081d7-0e79-63f5-c831-9bc6f1a4201b",
+				"f5607430-6b92-205a-db5e-7ad39a9efd7d",
+				"919cccb4-30eb-9162-46fa-49122c3cd6ee",
+				"1a882c90-097f-ce1d-90c8-4fbe4487cdb1",
+				"a5d02d11-8366-6330-5357-f921b734aed4"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "b41179d8-13a5-dbe5-f2bc-78304795fc73"
+		},
+		{
+			"name": "Sessão 13",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"order": [
+				"de000d96-60c4-0cab-1eab-175825238d75",
+				"352c97db-bd55-d0f8-7b6d-74194d9c68a2",
+				"f04e30b6-51a4-dfad-c1ab-4016e0abd47b",
+				"b9900599-b49e-fc2c-cf18-01d9128b39ef",
+				"11fd0224-9600-b1da-4656-844dd42b2603",
+				"9e4dbef5-72ac-044c-099a-61376b63d8e5",
+				"3b2fcc46-d10f-948f-353a-f2999930c512",
+				"fccc46e0-53ed-033d-0200-26b1dee6427a"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa"
+		},
+		{
+			"name": "Sessão 7",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"order": [
+				"b4bc079a-09be-1f21-7aaa-f89743376485",
+				"3e7005e2-210c-ac77-5e2e-48b569c24b27",
+				"858351b8-b6c1-4e80-3158-4a4f1fc7f2d3",
+				"c7b2a226-c93f-9c16-a2f6-0433edf14e8a",
+				"ab74cd50-bff2-24cd-a6c9-845562678c51",
+				"368aef5a-912a-407a-ef01-655d3347303b"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41"
+		}
+	],
+	"folders_order": [
+		"44ba0b2c-d3f0-8f49-d7cf-b83130d95c41",
+		"b41179d8-13a5-dbe5-f2bc-78304795fc73",
+		"eaaf0ff5-d6b6-d131-f63f-f559c742edfa"
+	],
+	"timestamp": 1642880505491,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "11fd0224-9600-b1da-4656-844dd42b2603",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\npostman-token: a5c3d2af-69d3-b89f-9bad-89d0c193c570\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "a5c3d2af-69d3-b89f-9bad-89d0c193c570",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579623995,
+			"name": "Atualizar Person",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Carlos David\",\n    \"lastName\": \"Alves Arcos\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Male\"\n}"
+		},
+		{
+			"id": "1a882c90-097f-ce1d-90c8-4fbe4487cdb1",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\npostman-token: a5c3d2af-69d3-b89f-9bad-89d0c193c570\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "a5c3d2af-69d3-b89f-9bad-89d0c193c570",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "b41179d8-13a5-dbe5-f2bc-78304795fc73",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579623995,
+			"name": "Atualizar Person",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Carlos David\",\n    \"lastName\": \"Alves Arcos\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Male\"\n}"
+		},
+		{
+			"id": "352c97db-bd55-d0f8-7b6d-74194d9c68a2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579573361,
+			"name": "Get All Person",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "368aef5a-912a-407a-ef01-655d3347303b",
+			"headers": "cache-control: no-cache\npostman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "4c5b4ff1-200d-56c0-6bcb-e93332fa3091",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person/5",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "DELETE",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"data": [],
+			"dataMode": "params",
+			"name": "Deletar Pessoa por ID",
+			"description": "Generated from a curl request: \ncurl -X GET \\\n  http://localhost:8080/person/1 \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091'",
+			"descriptionFormat": "html",
+			"time": 1642940598800,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41"
+		},
+		{
+			"id": "3b2fcc46-d10f-948f-353a-f2999930c512",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/person/v1?mediaType=xml",
+			"queryParams": [
+				{
+					"key": "mediaType",
+					"value": "xml",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Person with mediaType option in queryParam",
+			"description": "http://localhost:8080/api/person/v1?mediaType=xml",
+			"descriptionFormat": "html",
+			"time": 1650805598525,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa"
+		},
+		{
+			"id": "3e7005e2-210c-ac77-5e2e-48b569c24b27",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/person",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get All Person",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1642881313845,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41"
+		},
+		{
+			"id": "858351b8-b6c1-4e80-3158-4a4f1fc7f2d3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person",
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1644080306268,
+			"name": "Criar Person",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Maria\",\n    \"lastName\": \"Alves\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Female\"\n}"
+		},
+		{
+			"id": "919cccb4-30eb-9162-46fa-49122c3cd6ee",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "b41179d8-13a5-dbe5-f2bc-78304795fc73",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579583928,
+			"name": "Criar Person",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Maria\",\n    \"lastName\": \"Alves\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Female\"\n}"
+		},
+		{
+			"id": "9e4dbef5-72ac-044c-099a-61376b63d8e5",
+			"headers": "cache-control: no-cache\npostman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "4c5b4ff1-200d-56c0-6bcb-e93332fa3091",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1/5",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579625272,
+			"name": "Deletar Pessoa por ID",
+			"description": "Generated from a curl request: \ncurl -X GET \\\n  http://localhost:8080/person/1 \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091'",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "a5d02d11-8366-6330-5357-f921b734aed4",
+			"headers": "cache-control: no-cache\npostman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "4c5b4ff1-200d-56c0-6bcb-e93332fa3091",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1/5",
+			"folder": "b41179d8-13a5-dbe5-f2bc-78304795fc73",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579625272,
+			"name": "Deletar Pessoa por ID",
+			"description": "Generated from a curl request: \ncurl -X GET \\\n  http://localhost:8080/person/1 \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 4c5b4ff1-200d-56c0-6bcb-e93332fa3091'",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "a77081d7-0e79-63f5-c831-9bc6f1a4201b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/person/v1/1",
+			"folder": "b41179d8-13a5-dbe5-f2bc-78304795fc73",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579570961,
+			"name": "Get Person by ID",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "ab74cd50-bff2-24cd-a6c9-845562678c51",
+			"headers": "cache-control: no-cache\ncontent-type: application/json\npostman-token: a5c3d2af-69d3-b89f-9bad-89d0c193c570\n",
+			"headerData": [
+				{
+					"key": "cache-control",
+					"value": "no-cache",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "postman-token",
+					"value": "a5c3d2af-69d3-b89f-9bad-89d0c193c570",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Atualizar Person",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1642940461577,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41",
+			"rawModeData": "{\n    \"name\": \"Carlos David\",\n    \"lastName\": \"Alves Arcos\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Male\"\n}"
+		},
+		{
+			"id": "b4bc079a-09be-1f21-7aaa-f89743376485",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/person/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Person by ID",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1642880530080,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41"
+		},
+		{
+			"id": "b9900599-b49e-fc2c-cf18-01d9128b39ef",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579583928,
+			"name": "Criar Person YAML",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f04e30b6-51a4-dfad-c1ab-4016e0abd47b",
+			"rawModeData": "{\n    \"name\": \"Maria\",\n    \"lastName\": \"Alves\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Female\"\n}"
+		},
+		{
+			"id": "c7b2a226-c93f-9c16-a2f6-0433edf14e8a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/person/v2",
+			"folder": "44ba0b2c-d3f0-8f49-d7cf-b83130d95c41",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1644163146536,
+			"name": "Criar Person V2",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Carlos\",\n    \"lastName\": \"Paez\",\n    \"address\": \"Itaúna - MG\",\n    \"gender\": \"Male\",\n    \"birthday\": \"1959-02-12\"\n}"
+		},
+		{
+			"id": "de000d96-60c4-0cab-1eab-175825238d75",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/person/v1/1?mediaType=xml",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [
+				{
+					"key": "mediaType",
+					"value": "xml",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646581631240,
+			"name": "Get Person by ID",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "f04e30b6-51a4-dfad-c1ab-4016e0abd47b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579583928,
+			"name": "Criar Person",
+			"description": "Criar Person",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "919cccb4-30eb-9162-46fa-49122c3cd6ee",
+			"rawModeData": "{\n    \"name\": \"Maria\",\n    \"lastName\": \"Alves\",\n    \"address\": \"Itaipava - ES\",\n    \"gender\": \"Female\"\n}"
+		},
+		{
+			"id": "f5607430-6b92-205a-db5e-7ad39a9efd7d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "b41179d8-13a5-dbe5-f2bc-78304795fc73",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1646579573361,
+			"name": "Get All Person",
+			"description": "",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		},
+		{
+			"id": "fccc46e0-53ed-033d-0200-26b1dee6427a",
+			"headers": "Accept: application/x-yaml\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/x-yaml",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/person/v1",
+			"folder": "eaaf0ff5-d6b6-d131-f63f-f559c742edfa",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1650806855639,
+			"name": "Get Person with mediaType option in header",
+			"description": "curl -X GET \\\n  http://localhost:8080/api/person/v1 \\\n  -H 'accept: application/json' \\\n  -H 'cache-control: no-cache' \\\n  -H 'postman-token: 49a74be0-8a03-9921-871f-9c4e3bd97813'\n  \n  Como pode ser visto na aula 96, para header ele puxa o application/xml ou application/json\n  na aula 97, se alterar para application/x-yaml ele vai retornar com o yaml",
+			"collectionId": "45fc6d2d-b75f-2257-7ce4-3dd873ae81fc",
+			"responses": []
+		}
+	]
+}
