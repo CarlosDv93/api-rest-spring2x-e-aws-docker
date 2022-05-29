@@ -33,4 +33,13 @@ Usado nas propriedades (atributos) para ocultar nas respostas.
 
 O Código gerado na seção de versionamento, se encontra em uma branch separada - chamada de "versionamento".
 
+## Seção 13 - Content Negotiation
+
+Vide Nota001 na pasta Notas dentro resources para detalhes deste modulo.
+
+## Seção 14 - HATEOAS
+#### Vide nota002
+
+Não foi possível usar a deps 1.12.11 do HATEOAS pois apresentava a mensagem abaixo:
+`` The POM for org.springframework.hateoas:spring-hateoas:jar:1.12.11 is missing, no dependency information available``
 
