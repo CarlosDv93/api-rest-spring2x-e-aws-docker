@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 @RestController
 @RequestMapping("/api/person/v1")
 public class PersonController {
@@ -17,24 +20,40 @@ public class PersonController {
 
     @GetMapping(produces = { "application/json", "application/xml", "application/x-yaml"})
     public List<PersonVO> findAll() throws Exception {
-        return personService.findAll();
+        List<PersonVO> persons = personService.findAll();
+        persons.forEach(p -> {
+            try {
+                p.add(linkTo(methodOn(PersonController.class).findById(p.getKey())).withSelfRel());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        return persons;
     }
 
     @GetMapping(value = "{id}", produces = { "application/json", "application/xml", "application/x-yaml"})
     public PersonVO findById(@PathVariable Long id) throws Exception {
-        return personService.findById(id);
+        PersonVO personVO = personService.findById(id);
+        //Adicionar HATEOAS ao retorno. Vide Imports Statics
+        personVO.add(linkTo(methodOn(PersonController.class).findById(id)).withSelfRel());
+
+        return personVO;
     }
 
     @PostMapping(produces = { "application/json", "application/xml", "application/x-yaml"},
             consumes = { "application/json", "application/xml", "application/x-yaml"})
     public PersonVO createPerson(@RequestBody PersonVO person) throws Exception {
-        return personService.create(person);
+        PersonVO personVO = personService.create(person);
+        personVO.add(linkTo(methodOn(PersonController.class).findById(person.getKey())).withSelfRel());
+        return personVO;
     }
 
     @PutMapping(produces = { "application/json", "application/xml", "application/x-yaml"},
             consumes = { "application/json", "application/xml", "application/x-yaml"})
     public PersonVO updatePerson(@RequestBody PersonVO person) throws Exception {
-        return personService.create(person);
+        PersonVO personVO = personService.create(person);
+        personVO.add(linkTo(methodOn(PersonController.class).findById(person.getKey())).withSelfRel());
+        return personVO;
     }
 
     @DeleteMapping(value = "{id}")

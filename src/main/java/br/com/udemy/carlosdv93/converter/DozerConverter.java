@@ -15,7 +15,7 @@ public class DozerConverter {
      * Faz a conversão de um objeto simples.
      * @param origin Qual o obj de origem
      * @param destination Qual o Obj que sera retornado
-     * @return Objecto destino convertido
+     * @return Objeto destino convertido
      */
     public static <O, D> D parseObject(O origin, Class<D> destination) {
         return mapper.map(origin, destination);
@@ -25,7 +25,7 @@ public class DozerConverter {
      * Faz a conversão de um objeto simples do tipo Lista.
      * @param origin Qual o obj de origem
      * @param destination Qual o Obj que sera retornado
-     * @return Objecto destino convertido
+     * @return Objeto destino convertido
      */
     public static <O, D> List<D> parseListObjects(List<O> origin, Class<D> destination) {
         List<D> destinationObjects = new ArrayList<D>();
